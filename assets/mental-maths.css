@@ -1,0 +1,35 @@
+
+body{
+    text-align: center;
+    background-color: darkolivegreen;
+    color: white;
+    font-size: 1.2em;
+}
+#counter{
+    border: 1px solid aqua;
+    padding: 10px;
+    margin: 20px auto;
+    width: 100px;
+    display: none;
+}
+.container p{
+    display: inline;
+    margin: 10px;
+    font-size: 35px;
+}
+#question{
+    display: none;
+}
+#answer{
+    width: 75px;
+    height: 45px;
+    font-size: 35px;
+}
+#start, #btn{
+    padding: 20px;
+    font-size: 20px;
+    margin-top: 30px;
+    background-color: darkblue;
+    border-color: darkolivegreen;
+    color: white; 
+}
