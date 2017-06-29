@@ -25,11 +25,13 @@ body{
     height: 45px;
     font-size: 35px;
 }
-#start, #btn{
+#start, #btn, #playAgain{
     padding: 20px;
     font-size: 20px;
     margin-top: 30px;
     background-color: darkblue;
     border-color: darkolivegreen;
     color: white; 
+    display: inline-block;
+    text-align: center;
 }

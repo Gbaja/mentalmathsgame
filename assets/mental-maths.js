@@ -14,7 +14,7 @@ var minimum = 10;
 var maximum = 25;
 var point = 0;
 var questionsAnswered = 0;
-var counter = 120;
+var counter = 10;
 
 btn.addEventListener("click", changeNumber);
 
@@ -77,8 +77,8 @@ function countdown(){
             clearTimeout(t);
             btn.style.pointerEvents = "none";
             displayQuiz.innerHTML = "Time up!";
-            displayScore.innerHTML = "You went through " + questionsAnswered + " questions" + "<br>" +
-                                    " scored " + point + " points.";
+            displayScore.innerHTML += "<p> You went through " + questionsAnswered + " questions" + "<br>" +
+                                    " scored " + point + " points. </p><button id='playAgain' onclick='window.location.reload()'> Refresh </button>";
         }
     }
 
