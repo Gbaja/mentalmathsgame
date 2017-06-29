@@ -14,7 +14,7 @@ var minimum = 10;
 var maximum = 25;
 var point = 0;
 var questionsAnswered = 0;
-var counter = 10;
+var counter = 60;
 
 btn.addEventListener("click", changeNumber);
 
