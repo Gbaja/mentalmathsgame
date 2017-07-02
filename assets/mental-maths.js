@@ -76,9 +76,10 @@ function countdown(){
         else {
             clearTimeout(t);
             btn.style.pointerEvents = "none";
+            displayTimer.style.display = "none";
             displayQuiz.innerHTML = "Time up!";
             displayScore.innerHTML += "<p> You went through " + questionsAnswered + " questions" + "<br>" +
-                                    " scored " + point + " points. </p><button id='playAgain' onclick='window.location.reload()'> Refresh </button>";
+                                    " scored " + point + " points. </p> <p> <a href='mailto:gbajaf@yahoo.co.uk?subject=My Mental Maths Quiz Score'> Email me </a> what you got </p> <button id='playAgain' onclick='window.location.reload()'> Refresh </button>";
         }
     }
 
