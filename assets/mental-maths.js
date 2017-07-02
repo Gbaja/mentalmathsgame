@@ -78,8 +78,9 @@ function countdown(){
             btn.style.pointerEvents = "none";
             displayTimer.style.display = "none";
             displayQuiz.innerHTML = "Time up!";
+//            var url = 'https://twitter.com/intent/tweet?text=' + point + "/" + questionsAnswered'
             displayScore.innerHTML += "<p> You went through " + questionsAnswered + " questions" + "<br>" +
-                                    " scored " + point + " points. </p> <p> <a href='mailto:gbajaf@yahoo.co.uk?subject=My Mental Maths Quiz Score'> Email me </a> what you got </p> <button id='playAgain' onclick='window.location.reload()'> Refresh </button>";
+                                    " scored " + point + " points. </p> <p> <a href='mailto:gbajaf@yahoo.co.uk?subject=My Mental Maths Quiz Score'> Email me </a> your score </p> <p><a class='twitter-share-button' href='https://twitter.com/intent/tweet?text=I went through "+ questionsAnswered + " question(s) and scored "+ point + " in a 60seconds mental maths game created by Fatimat Gbajabiamila. https://gbaja.github.io/mentalmathsgame/'>Tweet</a></p> <button id='playAgain' onclick='window.location.reload()'> Refresh </button>";
         }
     }
 
