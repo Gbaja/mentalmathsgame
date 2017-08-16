@@ -17,6 +17,24 @@ var questionsAnswered = 0;
 var counter = 60;
 
 btn.addEventListener("click", changeNumber);
+ 
+//function inputKeyUp(e) {
+//  var e.which = e.which || e.keyCode;
+//    if(e.which == 13) {
+//        // submit
+//        changeNumber();
+//    }
+// }
+$(document).ready(function(){
+    $(document).bind('keypress',enterbtn);
+});
+
+function enterbtn(e){
+    if(e.keyCode === 13){
+      changeNumber()
+    }
+}
+
 
 function changeNumber(){
     // increment questions attempted
