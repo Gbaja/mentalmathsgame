@@ -30,7 +30,7 @@ $(document).ready(function(){
 });
 
 function enterbtn(e){
-    if(e.keyCode === 13 || event.which === 13){
+    if(e.keyCode === 13 || event.which === 13 || e.which === 9 || e.keycode === 9){
       changeNumber()
     }
 }
