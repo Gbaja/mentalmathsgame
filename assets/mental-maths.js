@@ -26,11 +26,11 @@ btn.addEventListener("click", changeNumber);
 //    }
 // }
 $(document).ready(function(){
-    $(document).bind('keypress',enterbtn);
+    $(document).bind('keydown',enterbtn);
 });
 
 function enterbtn(e){
-    if(e.keyCode === 13){
+    if(e.keyCode === 13 || event.which === 13){
       changeNumber()
     }
 }
