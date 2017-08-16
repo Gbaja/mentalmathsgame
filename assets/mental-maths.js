@@ -11,7 +11,7 @@ var instructions = document.getElementById("instructions");
 
 var symbol = ["+", "x", "-"];
 var minimum = 10;
-var maximum = 25;
+var maximum = 20;
 var point = 0;
 var questionsAnswered = 0;
 var counter = 60;
@@ -40,13 +40,19 @@ function changeNumber(){
     }
 
     // change the values for a new set
-    var numberOne = Math.floor(Math.random() * maximum);
-        boxOne.innerHTML = numberOne;
-    var numberTwo = Math.floor(Math.random() * minimum)
-        boxTwo.innerHTML = numberTwo;
+    var numberOne = Math.floor(Math.random() * maximum);  
+    var numberTwo = Math.floor(Math.random() * minimum);
     var randomSymbol = symbol[Math.floor(symbol.length*Math.random())] 
-        mathSymbol.innerHTML = randomSymbol;  
-
+    
+    if(numberOne > numberTwo){
+        boxOne.innerHTML = numberOne;
+        boxTwo.innerHTML = numberTwo;
+    } else{
+        boxOne.innerHTML = numberTwo;
+        boxTwo.innerHTML = numberOne;
+    }
+    
+    mathSymbol.innerHTML = randomSymbol;  
     answerBox.value = "";
 }
 
