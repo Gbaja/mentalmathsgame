@@ -48,7 +48,7 @@ body{
     border: none;
 }
 .name{
-    position: fixed;
+    position: relative;
     bottom: 0px;
     text-align: center;
     right: 0px;
