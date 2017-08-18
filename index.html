@@ -4,29 +4,31 @@
     <link type="text/css" rel="stylesheet" href="assets/mental-maths.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/5baabe07ac.js"></script>
 </head>
 <body>
     <h1> Mental maths quiz </h1>
     <div id="instructions">
         <p> Click start to see how many questions you can answer correctly in 60 seconds. Do not use a calculator! </p>
-        <p> Enter answer in the box and click change for next question or click change if you don't know the answer. </p>
+        <p> Enter your answer in the box and click the arrow or press enter for next question. </p>
         <button id="start" onclick="countdown()"> Start </button>
     </div>
-    <div id="counter">60 seconds</div>
+    <div id="counter">Timer: 60 seconds</div>
     <div class="container" id="question">
         <p id="boxOne"> </p>
         <p  id="sign"> </p>
         <p id="boxTwo"> </p>
         <p  id="equal"> = </p>
         <input id="answer" type="tel">
+     <button id="btn"> <i class="fa fa-arrow-right fa-3x" aria-hidden="true"></i> </button>
         <br>
-     <button id="btn"> Change </button> 
+    <button id='playAgain' onclick='window.location.reload()'> Refresh </button>
     </div>
     
     <div id="displayScore">
     </div>
     
-    <p> Created by Fatimat Gbajabiamila. </p>
+    <p class="name"> Created by Fatimat Gbajabiamila. </p>
     <script type="text/javascript" src="assets/mental-maths.js"></script>
 </body>
 </html>
