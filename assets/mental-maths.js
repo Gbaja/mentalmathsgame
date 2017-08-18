@@ -25,9 +25,7 @@ btn.addEventListener("click", changeNumber);
 //        changeNumber();
 //    }
 // }
-$(document).ready(function(){
-    $(document).bind('keydown',enterbtn);
-});
+answerBox.addEventListener('keydown',enterbtn);
 
 function enterbtn(e){
     if(e.keyCode === 13 || event.which === 13 || e.which === 9 || e.keycode === 9){
@@ -93,7 +91,7 @@ function countdown(){
     displayTimer.style.display = "block";
     function startTime(){
         counter--;
-        displayTimer.innerHTML = counter + " seconds <button class='playAgain' onclick='window.location.reload()'> Refresh </button>";
+        displayTimer.innerHTML = counter + " seconds ";
         if(counter > 0){
             var t = setTimeout(startTime, 1000)
         } 
