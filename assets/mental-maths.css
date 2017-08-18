@@ -33,7 +33,7 @@ body{
     display: inline-block;
     text-align: center;
 }
-#start, #btn, #playAgain{
+#start, #playAgain{
     padding: 20px;
     font-size: 20px;
     margin-top: 30px;
@@ -42,4 +42,22 @@ body{
     color: white; 
     display: inline-block;
     text-align: center;
+}
+#btn{
+    background-color: inherit;
+    border: none;
+}
+.name{
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    right: 0px;
+    left: 0px;
+}
+@media screen and (max-width: 500px){
+    .container p{
+        margin: 4px;
+    }
+  
+    
 }
