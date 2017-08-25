@@ -89,6 +89,7 @@ function getExpectedAnswer(randomSymbol, numberOne, numberTwo){
 function countdown(){
     instructions.style.display = "none";
     displayTimer.style.display = "block";
+    document.getElementById("nameid").style.display = "none";
     function startTime(){
         counter--;
         displayTimer.innerHTML = counter + " seconds ";
