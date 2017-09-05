@@ -8,28 +8,30 @@
     <script src="https://use.fontawesome.com/5baabe07ac.js"></script>
 </head>
 <body>
-    <h1> Mental Maths Quiz </h1>
-    <div id="instructions">
+    <h1 class="heading"> Mental Maths Quiz </h1>
+    <div class="instructionsClass" id="instructions">
         <p> Click start to see how many questions you can answer correctly in 60 seconds. Do not use a calculator! </p>
         <p> Enter your answer in the box and click the arrow or press enter for next question. </p>
-        <button id="start" onclick="countdown()"> Start </button>
+        <button id="start" class="startBtn" onclick="countdown()"> Start </button>
+         <p class="name" id="nameid"> Created by Fatimat Gbajabiamila. </p>
     </div>
-    <div id="counter">Timer: 60 seconds</div>
+    
     <div class="container" id="question">
+        <div class="countdown" id="counter">Timer: 60 seconds</div>
         <p id="boxOne"> </p>
         <p  id="sign"> </p>
         <p id="boxTwo"> </p>
         <p  id="equal"> = </p>
-        <input id="answer" type="tel">
-     <button id="btn"> <i class="fa fa-arrow-right fa-3x" aria-hidden="true"></i> </button>
+        <input id="answer" class="answerClass" type="tel">
+     <button id="btn" class="nextBtn"> <i class="fa fa-arrow-right fa-3x" aria-hidden="true"></i> </button>
         <br>
-    <button id='playAgain' onclick='window.location.reload()'> Refresh </button>
+    <button id='playAgain' class="playAgainBtn" onclick='window.location.reload()'> Refresh </button>
     </div>
     
     <div id="displayScore">
     </div>
     
-    <p class="name" id="nameid"> Created by Fatimat Gbajabiamila. </p>
+   
     <script type="text/javascript" src="assets/mental-maths.js"></script>
 </body>
 </html>
