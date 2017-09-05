@@ -112,3 +112,10 @@ function countdown(){
    startBtn.style.display = "none";
    changeNumber();
 }
+
+var playAgainButton = document.getElementById("playAgain");
+playAgainButton.addEventListener('click', refreshPage);
+
+function refreshPage(){
+    window.location.reload();
+};
